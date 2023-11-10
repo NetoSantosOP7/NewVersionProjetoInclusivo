@@ -2,28 +2,69 @@
 <html>
 <head>
     <style>
+        body {
+            background-color: #042337;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-body {
-    background-color: #042337;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    padding: 20px;
-}
+        h2 {
+            color: #2884da;
+            font-size: 2rem;
+        }
 
-h2 {
-    color: #2884da;
-}
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            width: 80vw;
+            border: 2px solid #2884da;
+            padding: 10px;
+            border-radius: 10px;
+        }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}
+        button {
+            background-color: #3498db;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
 
+        button:hover {
+            background-color: #2884da;
+        
+        }
+        button i {
+            transition: all .2s ease-in-out;
+        }
+
+        button:hover i {
+            transform: translateX(-3px);
+        }
+
+        a {
+            font-size: 1rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        a > i {
+            margin-left: 5px;
+        }
     </style>
     <title>Resultado do Processamento</title>
+    <script src="https://kit.fontawesome.com/aaa49a1d23.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h2>Resultado do Processamento</h2>
     <p>{{ text }}</p>
+    <button><a href="./">Transcrever outro vídeo <i class="fa-solid fa-arrow-left"></i></a></button>
 </body>
 </html>
