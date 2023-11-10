@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Converter para texto</title>
+    <style>
+        body {
+            background-color: #0F1724;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #3498db;
+
+            border-radius: 5px;
+
+            background-color: #0F1724;
+
+            color: #FFFFFF;
+
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+
+            background-color: #3498db;
+
+            color: #FFFFFF;
+
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            background-color: #0F1724;
+
+            color: #FFFFFF;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Transformar Video em Audio</h2>
+    <h1>Coloque seu video para retirar o texto</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="video/*">
+        <input type="submit" value="Upload e Processar Vídeo">
+    </form>
+
+
+</body>
+
+</html>
